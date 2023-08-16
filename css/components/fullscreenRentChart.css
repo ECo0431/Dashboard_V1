@@ -1,0 +1,25 @@
+
+/* Style pour le graphique en mode plein écran */
+#rent-chart-fullscreen.canvas-fullscreen {
+    width: 100vw;
+    aspect-ratio: 16 / 9; /* Ratio de largeur:hauteur, ajustez selon vos besoins */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajoutez également une marge interne au graphique lui-même */
+  #rent-chart-fullscreen.canvas-fullscreen .chart {
+    margin: 10px; /* Ajoutez la marge interne souhaitée */
+  }
+  
+  /* Dimensions fixes pour le graphique en mode plein écran */
+  #rent-chart-fullscreen.canvas-fullscreen canvas {
+    width: 100% !important;
+    height: 400px !important; /* Hauteur fixe en pixels */
+  }
+  
+  

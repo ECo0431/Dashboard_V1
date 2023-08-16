@@ -1,0 +1,63 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.import-button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.import-button:hover {
+  background-color: #00994d;
+}
+
+.delete-button {
+  background-color: #ff5050;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+/* Styles pour le bouton "Choisir un fichier CSV" */
+.file-label {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none; /* Supprime la bordure par défaut */
+  outline: none; /* Supprime le contour de mise au point */
+  text-decoration: none; /* Supprime la décoration de texte (sous-lignage) */
+}
+
+.file-label:hover {
+    background-color: #555;
+    color: white;
+}
+
+.file-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.none{
+  display: none;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>RealT</title>
+</head>
+<body>
+    <script src="../js/components/menu.js"></script>
+    <main>
+        <div class="controls">
+            <label for="csvFileInput" class="file-label">
+                <span class="file-button">Choisir un fichier CSV</span>
+                <input type="file" id="csvFileInput" class="file-input none" accept=".csv">
+            </label>
+            <span id="selectedFileName" class="selected-file-name">Aucun fichier sélectionné</span>
+            <div>
+                <button id="importButton" class="import-button">Importer</button>
+                <button id="deleteButton" class="delete-button">Supprimer</button>
+            </div>
+        </div> 
+        <div class="box-rent-chart">
+            <div id="rent-chart-fullscreen" class="rent-chart rent-chart-fullscreen">
+                <button id="fullscreenButtonRent" class="fullscreen-button">
+                    <i class="fas fa-expand"></i> <!-- Icône plein écran -->
+                </button>
+                <canvas id="rentChart" class="chart-canvas"></canvas>
+            </div>
+            <div id="rent-monthly-chart-fullscreen" class="rent-chart rent-chart-fullscreen">
+                <button id="fullscreenButtonMonthlyRent" class="fullscreen-button">
+                    <i class="fas fa-expand"></i> <!-- Icône plein écran -->
+                </button>
+                <canvas id="monthlyRentChart" class="chart-canvas"></canvas>
+            </div>
+            <div id="rent-trimester-chart-fullscreen" class="rent-chart rent-chart-fullscreen">
+                <button id="fullscreenButtonTrimesterRent" class="fullscreen-button">
+                    <i class="fas fa-expand"></i> <!-- Icône plein écran -->
+                </button>
+                <canvas id="trimesterRentChart" class="chart-canvas"></canvas>
+            </div>
+            <div id="rent-years-chart-fullscreen" class="rent-chart rent-chart-fullscreen">
+                <button id="fullscreenButtonYearsRent" class="fullscreen-button">
+                    <i class="fas fa-expand"></i> <!-- Icône plein écran -->
+                </button>
+                <canvas id="yearsRentChart" class="chart-canvas"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="../js/data/getData.js"></script>
+    <script src="../js/data/deleteData.js"></script>
+    <script src="../js/data/filteredData.js"></script>
+    <script src="../js/data/filteredWeeklyRentData.js"></script>
+    <script src="../js/data/filteredMonthlyRentData.js"></script>
+    <script src="../js/data/filteredTrimesterRentData.js"></script>
+    <script src="../js/data/filteredYearsRentData.js"></script>
+    <script src="../js/data/readWeeklyChartRentData.js"></script>
+    <script src="../js/data/readMonthlyChartRentData.js"></script>
+    <script src="../js/data/readTrimesterChartRentData.js"></script>
+    <script src="../js/data/readYearsChartRentData.js"></script>
+    <script src="../js/script/fullscreenRentChart.js"></script>
+</body>
+</html>

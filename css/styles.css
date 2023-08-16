@@ -1,0 +1,14 @@
+@import url('./components/menu.css');
+@import url('./components/rentChart.css');
+@import url('./components/controllsRentData.css');
+@import url('./components/fullscreenRentChart.css');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  button{
+    cursor: pointer;
+  }
+

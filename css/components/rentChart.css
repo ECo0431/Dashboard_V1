@@ -1,0 +1,25 @@
+
+.box-rent-chart{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rent-chart{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  canvas{
+    width: 100% !important;
+    height: 100% !important;
+  }

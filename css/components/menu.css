@@ -1,0 +1,57 @@
+/* Styles pour le menu burger */
+.burger-menu {
+    cursor: pointer;
+  }
+  
+  /* Styles pour l'icône du menu burger */
+  .burger-menu i {
+    margin: 20px;
+    font-size: 24px; /* Taille de l'icône */
+    color: black;   /* Couleur de l'icône */
+  }
+  
+  /* Styles pour le menu latéral */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #555;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 24px;
+  }
+  
+  /* Assure que l'icône est centrée verticalement */
+  .close-btn i {
+    line-height: 1;
+    color: white; /* Couleur de l'icône de la croix en blanc */
+  }
+  
+  /* Styles pour le menu latéral ouvert */
+  .sidebar.active {
+    left: 0;
+  }
+  
