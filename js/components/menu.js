@@ -4,8 +4,8 @@ document.write(`
 <i class="fas fa-bars"></i> <!-- Icône du menu burger de Font Awesome -->
 </div>
 <div class="sidebar" id="sidebar">
-<a href="../../index.html">Accueil</a>
-<a href="../pages/realt.html">RealT</a>
+<a href="./../index.html">Accueil</a>
+<a href="./pages/realt.html">RealT</a>
 <div class="close-btn" onclick="toggleMenu()">
   <i class="fas fa-times"></i>
 </div>
